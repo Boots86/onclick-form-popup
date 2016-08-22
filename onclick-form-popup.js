@@ -1,4 +1,5 @@
-$('#get-started').on('click', function() {
+$( document ).ready(function() {
+ $('#get-started').on('click', function() {
       var $sidenav, $this;
       $this = $(this);
       $sidenav = $('#popup-container');
@@ -24,7 +25,9 @@ $('#get-started').on('click', function() {
     });
     $('#popup-container').find('.close').on('click', function() {
       $(this).parent().removeClass('open');
-      $('#get-started').removeClass('open')
+	    $('#get-started').removeClass('open')
       return $('#popup-container').removeClass('open');
-      return $('#get-started').removeClass('open');
+	    return $('#get-started').removeClass('open');
+    });
+
 });
